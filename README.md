@@ -15,7 +15,33 @@ No utiliza el framework Truffle.
 - ganache-cli ( o ganache )
 - navegador web con plugin Metamask instalado (por ejemplo Chrome)
 
-## Instrucciones de puesta en marcha
+## Versiones node y npm
+
+```
+node --version
+v8.12.0
+
+npm --version
+6.4.1
+```
+
+## Paquetes npm instalados globalmente
+
+```
+npm list -g --depth 0
+/home/ana/.nvm/versions/node/v8.12.0/lib
+├── @angular/cli@7.0.5
+├── create-react-app@2.1.1
+├── eslint@5.9.0
+├── ethers-ens@0.2.1
+├── ganache-cli@6.1.8
+├── npm@6.4.1
+├── solc@0.4.25
+├── subdownloader@2.0.1
+└── truffle@4.1.14
+```
+
+## Instalar dependencias
 
 ```
 npm install
@@ -103,7 +129,7 @@ Observacion: si se reinicia ganache-cli metamask detecta el estado fuera de secu
 ### Mis comandos todo-en-uno (terminal 1)
 
 ```
-cd ethereum ; node compile.js ; ll build ; npm run test ; export ETHEREUM_NETWORK=http://127.0.0.1:8545 ; ganache-cli -m "$ETHEREUM_MNEMONIC"
+cd ethereum ; node compile.js ; ll build ; npm run test ; export ETHEREUM_MNEMONIC='arctic market penalty various glue runway cliff rose shrimp ticket drop home' ; ganache-cli -m "$ETHEREUM_MNEMONIC"
 ```
 
 ### Mis comandos todo-en-uno (terminal 2)
